@@ -14,7 +14,7 @@ else {
         url: "https://api.github.com/users/veysel",
         success: function (result) {
             var viObject = JSON.stringify({ name: result.name });
-            Tools.AddName(viObject.name);
+            Tools.AddName(result.name);
             localStorage.setItem("viContent", viObject);
         }
     });
