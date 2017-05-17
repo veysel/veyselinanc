@@ -1,7 +1,7 @@
 var Tools = {
     AddName: function (tempName) {
-        var newTag = $("<a></a>").text(tempName).addClass("list-group-item list-title");
-        $(".list-group").prepend(newTag);
+        var newTag = $("<div></div>").text(tempName).addClass("list-group-item list-title").css("font-size", 10);
+        $("#infoLeft").prepend(newTag);
     }
 }
 
@@ -13,8 +13,8 @@ else {
     $.ajax({
         url: "https://api.github.com/users/veysel",
         success: function (result) {
-            var viObject = JSON.stringify({ name: result.name });
             Tools.AddName(result.name);
+            var viObject = JSON.stringify({ name: result.name });
             localStorage.setItem("viContent", viObject);
         }
     });
