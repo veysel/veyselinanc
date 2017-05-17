@@ -1,7 +1,7 @@
 var Tools = {
     AddName: function (tempName) {
         var newTag = $("<a></a>").text(tempName).addClass("list-group-item list-title");
-        $(".list-group").append(newTag);
+        $(".list-group").prepend(newTag);
     }
 }
 
