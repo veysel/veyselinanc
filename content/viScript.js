@@ -8,19 +8,25 @@ var Tools = {
             var newTag = $("<a></a>").text(element).addClass("list-group-item");
             $("#listRight").append(newTag);
         }, this);
+    },
+    AddImage: function (tempSrc) {
+        var newTag = $("<img></img>").addClass("list-group-item").attr("src", tempSrc).css("width",150);
+        $("#imgLeft").prepend(newTag);
     }
 }
 
 if (localStorage.getItem("viContent")) {
     var viObject = JSON.parse(localStorage.getItem("viContent"));
     Tools.AddName(viObject.name);
+    Tools.AddImage(viObject.userImage);
 }
 else {
     $.ajax({
         url: "https://api.github.com/users/veysel",
         success: function (result) {
             Tools.AddName(result.name);
-            var viObject = JSON.stringify({ name: result.name });
+            Tools.AddImage(result.avatar_url);
+            var viObject = JSON.stringify({ name: result.name, userImage: result.avatar_url });
             localStorage.setItem("viContent", viObject);
         }
     });
