@@ -29,3 +29,11 @@
 .list-title:hover{
     color:black !important;
 }
+
+.img-border{
+    border: 1px solid green;
+    border-radius: 5px;
+
+    padding: 1px;
+    margin-bottom: 3px;
+}

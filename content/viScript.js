@@ -10,8 +10,8 @@ var Tools = {
         }, this);
     },
     AddImage: function (tempSrc) {
-        var newTag = $("<img></img>").addClass("list-group-item").attr("src", tempSrc).css("width",150);
-        $("#imgLeft").prepend(newTag);
+        var newTag = $("<img></img>").addClass("img-border").attr("src", tempSrc).css("width", 130);
+        $("#imgLeft").append(newTag);
     }
 }
 
