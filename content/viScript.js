@@ -16,8 +16,18 @@ var Tools = {
     AddTitleList: function (tempList) {
         tempList.forEach(function (element) {
             var newTag = $("<a></a>").text(element.date + '  -  ' + element.titleText).addClass("list-group-item");
+            newTag.attr("onclick", 'Tools.GoToContent(\'' + element.url + '\');');
+            newTag.attr("href", "javascript:void(0)");
             $("#titleList").prepend(newTag);
         }, this);
+    },
+    ToggleListAndContent: function () {
+        $("#titleList").slideToggle();
+        $("#content").slideToggle();
+    },
+    GoToContent: function (tempUrl) {
+        $("#contentText").load(tempUrl);
+        this.ToggleListAndContent();
     }
 }
 
@@ -65,3 +75,5 @@ $.ajax({
         Tools.AddTitleList(data);
     }
 });
+
+$("#content").toggle();
