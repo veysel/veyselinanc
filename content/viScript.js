@@ -12,6 +12,12 @@ var Tools = {
     AddImage: function (tempSrc) {
         var newTag = $("<img></img>").addClass("img-border").attr("src", tempSrc).css("width", 130);
         $("#imgLeft").append(newTag);
+    },
+    AddTitleList: function (tempList) {
+        tempList.forEach(function (element) {
+            var newTag = $("<a></a>").text(element.date + '  -  ' + element.titleText).addClass("list-group-item");
+            $("#titleList").prepend(newTag);
+        }, this);
     }
 }
 
@@ -50,3 +56,12 @@ else {
         }
     });
 }
+
+$.ajax({
+    contentType: "application/json",
+    dataType: "json",
+    url: "data/title-list.json",
+    success: function (data) {
+        Tools.AddTitleList(data);
+    }
+});
