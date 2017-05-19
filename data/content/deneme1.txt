@@ -1,1 +1,2 @@
-Bura deneme 1
+Bura deneme 1.
+Test içindir.
