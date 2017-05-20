@@ -2,19 +2,7 @@
     {
         "id": 1,
         "titleText": "Deneme1",
-        "url": "data/content/deneme1.txt",
+        "url": "data/content/deneme1.html",
         "date": "18 Mayıs 2017"
-    },
-    {
-        "id": 2,
-        "titleText": "Deneme2",
-        "url": "data/content/deneme2.txt",
-        "date": "19 Mayıs 2017"
-    },
-    {
-        "id": 3,
-        "titleText": "Deneme3",
-        "url": "data/content/deneme3.txt",
-        "date": "19 Mayıs 2017"
     }
 ]
