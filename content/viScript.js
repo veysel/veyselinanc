@@ -58,7 +58,12 @@ else {
         success: function (result) {
             var tempArray = [];
             for (var i = 0; i < 5; i++) {
-                tempArray.push(result[i].payload.commits[0].message);
+                if (result[i].payload.commits) {
+                    tempArray.push(result[i].payload.commits[0].message);
+                }
+                else {
+                    tempArray.push("Type : " + result[i].type);
+                }
             }
             Tools.AddCommitList(tempArray);
             var viObject = JSON.stringify({ list: tempArray });
