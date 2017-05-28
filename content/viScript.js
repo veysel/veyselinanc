@@ -1,4 +1,5 @@
 var Tools = {
+    StaticUserName: "veysel",
     AddName: function (tempName) {
         var newTag = $("<div></div>").text(tempName).addClass("list-group-item list-title").css("font-size", 10);
         $("#infoLeft").prepend(newTag);
@@ -38,7 +39,7 @@ if (localStorage.getItem("viContent")) {
 }
 else {
     $.ajax({
-        url: "https://api.github.com/users/veysel",
+        url: "https://api.github.com/users/" + Tools.StaticUserName,
         success: function (result) {
             Tools.AddName(result.name);
             Tools.AddImage(result.avatar_url);
@@ -54,7 +55,7 @@ if (localStorage.getItem("viList")) {
 }
 else {
     $.ajax({
-        url: "https://api.github.com/users/veysel/events",
+        url: "https://api.github.com/users/" + Tools.StaticUserName + "/events",
         success: function (result) {
             var tempArray = [];
             for (var i = 0; i < 5; i++) {
