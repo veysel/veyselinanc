@@ -4,5 +4,11 @@
         "titleText": "Site Neden Değişti",
         "url": "data/content/site-neden-degisti.html",
         "date": "20 Mayıs 2017"
+    },
+    {
+        "id": 2,
+        "titleText": "Angular 2 Püf Noktaları",
+        "url": "data/content/angular2-puf-noktalari.html",
+        "date": "29 Mayıs 2017"
     }
 ]
