@@ -83,3 +83,5 @@ $.ajax({
 });
 
 $("#content").toggle();
+
+console.log("Test");
