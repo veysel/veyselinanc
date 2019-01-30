@@ -10,5 +10,11 @@
         "titleText": "Angular 2 Püf Noktaları",
         "url": "data/content/angular2-puf-noktalari.html",
         "date": "29 Mayıs 2017"
+    },
+    {
+        "id": 3,
+        "titleText": "OpenStreetMap Atlas Harita Entegrasyonu",
+        "url": "data/content/openstreetmap-atlas-harita-entegrasyonu.html",
+        "date": "30 Ocak 2019"
     }
 ]
