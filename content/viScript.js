@@ -29,6 +29,19 @@ var Tools = {
     GoToContent: function (tempUrl) {
         $("#contentText").load(tempUrl);
         this.ToggleListAndContent();
+    },
+    AddStatusList: function (tempObject) {
+        var newTag = $("<a></a>").text(tempObject.date).addClass("list-group-item text-center");
+        $("#listStatus").append(newTag);
+
+        tempObject.status.forEach(function (element) {
+            let value = element.value ? "btn-success" : "btn-danger";
+
+            var newTag = $("<a></a>").addClass("list-group-item");
+            newTag.append("<span>" + element.key + "</span>");
+            newTag.append("<span style='border-radius:1000px;' class='pull-right " + value + "'>&nbsp;&nbsp;&nbsp;&nbsp;</span>");
+            $("#listStatus").append(newTag);
+        }, this);
     }
 }
 
@@ -79,6 +92,15 @@ $.ajax({
     url: "data/title-list.json",
     success: function (data) {
         Tools.AddTitleList(data);
+    }
+});
+
+$.ajax({
+    contentType: "application/json",
+    dataType: "json",
+    url: "data/status.json",
+    success: function (data) {
+        Tools.AddStatusList(data[data.length - 1]);
     }
 });
 

@@ -1,0 +1,89 @@
+[
+    {
+        "date": "24.02.2019 04:12",
+        "status": [
+            {
+                "key": "Ject",
+                "value": true
+            },
+            {
+                "key": "Posm",
+                "value": false
+            },
+            {
+                "key": "Teng",
+                "value": true
+            },
+            {
+                "key": "Patik",
+                "value": false
+            },
+            {
+                "key": "Tarry",
+                "value": false
+            },
+            {
+                "key": "Tasbir",
+                "value": true
+            }
+        ]
+    },
+    {
+        "date": "24.02.2019 04:28",
+        "status": [
+            {
+                "key": "Ject",
+                "value": true
+            },
+            {
+                "key": "Posm",
+                "value": false
+            },
+            {
+                "key": "Teng",
+                "value": false
+            },
+            {
+                "key": "Patik",
+                "value": false
+            },
+            {
+                "key": "Tarry",
+                "value": false
+            },
+            {
+                "key": "Tasbir",
+                "value": true
+            }
+        ]
+    },
+    {
+        "date": "24.02.2019 05:09",
+        "status": [
+            {
+                "key": "Ject",
+                "value": true
+            },
+            {
+                "key": "Posm",
+                "value": false
+            },
+            {
+                "key": "Teng",
+                "value": false
+            },
+            {
+                "key": "Patik",
+                "value": false
+            },
+            {
+                "key": "Tarry",
+                "value": false
+            },
+            {
+                "key": "Tasbir",
+                "value": false
+            }
+        ]
+    }
+]
