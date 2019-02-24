@@ -114,5 +114,34 @@
                 "value": false
             }
         ]
+    },
+    {
+        "date": "24.02.2019 23:30",
+        "status": [
+            {
+                "key": "Ject",
+                "value": true
+            },
+            {
+                "key": "Posm",
+                "value": false
+            },
+            {
+                "key": "Teng",
+                "value": true
+            },
+            {
+                "key": "Patik",
+                "value": false
+            },
+            {
+                "key": "Tarry",
+                "value": true
+            },
+            {
+                "key": "Tasbir",
+                "value": true
+            }
+        ]
     }
 ]
