@@ -1,0 +1,13 @@
+title: veysel
+email: veyselinanc1@gmail.com
+description: >-
+  software developer
+baseurl: ""
+url: ""
+github_username:  veysel
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
