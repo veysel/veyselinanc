@@ -11,3 +11,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+jekyll_clicky:
+  site:
+    id: 101206377
