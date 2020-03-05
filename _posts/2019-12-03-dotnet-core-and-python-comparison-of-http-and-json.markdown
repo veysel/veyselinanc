@@ -32,7 +32,7 @@ Hello, in this article I'll show you a comparison of the http and json modules c
 
 > The procedures were repeated 100 times to find the average time.
 
-> gundem.json file size 3.96 MB
+> gundem.json file size 4.03 MB
 
 <br>
 
@@ -47,10 +47,10 @@ Hello, in this article I'll show you a comparison of the http and json modules c
 
 |                               | Dotnet Core (sec.) | Python (sec.)  |
 |:----------------------------- |:------------------:|:--------------:|
-| **Http First Request Time**   | 3.97698            | 2.87556        |
+| **Http First Request Time**   | 3.69863            | 2.87556        |
 | **Json First Parse Time**     | 0.09178            | 0.03590        |
 |                               |                    |                |
-| **Http Average Request Time** | 3.55077            | 1.25587        |
+| **Http Average Request Time** | 3.25506            | 1.25587        |
 | **Json Average Parse Time**   | 0.08062            | 0.05479        |
 
 <br>
@@ -59,10 +59,10 @@ Hello, in this article I'll show you a comparison of the http and json modules c
 
 |                               | Dotnet Core (sec.) | Python (sec.)  |
 |:----------------------------- |:------------------:|:--------------:|
-| **Http First Request Time**   | 3.74924            | 1.80764        |
+| **Http First Request Time**   | 3.70896            | 1.80764        |
 | **Json First Parse Time**     | 0.07619            | 0.04377        |
 |                               |                    |                |
-| **Http Average Request Time** | 3.78885            | 1.07412        |
+| **Http Average Request Time** | 3.27412            | 1.07412        |
 | **Json Average Parse Time**   | 0.07755            | 0.05438        |
 
 <br>
@@ -71,10 +71,10 @@ Hello, in this article I'll show you a comparison of the http and json modules c
 
 |                               | Dotnet Core (sec.) | Python (sec.)  |
 |:----------------------------- |:------------------:|:--------------:|
-| **Http First Request Time**   | 1.81205            | 1.40607        |
+| **Http First Request Time**   | 1.27413            | 1.40607        |
 | **Json First Parse Time**     | 0.08275            | 0.03597        |
 |                               |                    |                |
-| **Http Average Request Time** | 0.47609            | 0.64788        |
+| **Http Average Request Time** | 0.42018            | 0.64788        |
 | **Json Average Parse Time**   | 0.07664            | 0.04543        |
 
 <br>
@@ -83,8 +83,8 @@ Hello, in this article I'll show you a comparison of the http and json modules c
 
 |                               | Dotnet Core (sec.) | Python (sec.)  |
 |:----------------------------- |:------------------:|:--------------:|
-| **Http First Request Time**   | 1.73506            | 1.59313        |
+| **Http First Request Time**   | 1.54944            | 1.59313        |
 | **Json First Parse Time**     | 0.08650            | 0.05000        |
 |                               |                    |                |
-| **Http Average Request Time** | 0.62352            | 0.67746        |
+| **Http Average Request Time** | 0.46743            | 0.67746        |
 | **Json Average Parse Time**   | 0.08146            | 0.04252        |
